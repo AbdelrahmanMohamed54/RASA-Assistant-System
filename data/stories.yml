@@ -1,0 +1,247 @@
+version: "3.1"
+
+stories:
+
+- story: inquire about international exchange programs language skills loop path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inquire_international_exchange_programs
+  - action: utter_inquire_international_exchange_programs
+  - intent: inquire_ixp_language_skills
+  - action: action_get_language_skills
+  - intent: inquire_ixp_How_to_apply
+  - action: action_get_How_To_Apply
+
+- story: inquire about international exchange programs how to apply loop path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inquire_international_exchange_programs
+  - action: utter_inquire_international_exchange_programs
+  - intent: inquire_ixp_How_to_apply
+  - action: action_get_How_To_Apply
+  - intent: inquire_ixp_language_skills
+  - action: action_get_language_skills
+
+- story: inquire about master programs path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inquire_master_programs
+  - action: action_list_master_faculties
+  - intent: choose_master_faculty
+    entities:
+      - master_faculty: "Artificial Intelligence and Data Science"
+  - action: action_list_programs_under_master_faculty
+  - intent: inquire_master_program_name_and_info
+    entities:
+      - master_program_name: "Applied AI for Digital Production Management"
+      - master_info: "language of teaching"
+  - action: action_provide_master_program_details
+
+
+- story: inquire about bachelor programs path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inquire_bachelor_programs
+  - action: action_list_bachelor_faculties
+  - intent: choose_bachelor_faculty
+    entities:
+      - bachelor_faculty: "Business and Economics"
+  - action: action_list_programs_under_bachelor_faculty
+  - intent: inquire_bachelor_program_name_and_info
+    entities:
+      - bachelor_program_name: "Business Administration"
+      - bachelor_info: "language of teaching"
+  - action: action_provide_program_details
+
+
+- story: inquire about another bachelor programs loop path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inquire_bachelor_programs
+  - action: action_list_bachelor_faculties
+  - intent: choose_bachelor_faculty
+    entities:
+      - bachelor_faculty: "Business and Economics"
+  - action: action_list_programs_under_bachelor_faculty
+  - intent: inquire_bachelor_program_name_and_info
+    entities:
+      - bachelor_program_name: "Business Administration"
+      - bachelor_info: "language of teaching"
+  - action: action_provide_program_details
+  - intent: inquire_another_bachelor_program_loop
+  - action: action_list_bachelor_faculties
+  - intent: choose_bachelor_faculty
+    entities:
+      - bachelor_faculty: "Business and Economics"
+  - action: action_list_programs_under_bachelor_faculty
+  - intent: inquire_bachelor_program_name_and_info
+    entities:
+      - bachelor_program_name: "Business Administration"
+      - bachelor_info: "language of teaching"
+  - action: action_provide_program_details
+
+
+- story: after bachelor program change to master path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inquire_bachelor_programs
+  - action: action_list_bachelor_faculties
+  - intent: choose_bachelor_faculty
+    entities:
+      - bachelor_faculty: "Business and Economics"
+  - action: action_list_programs_under_bachelor_faculty
+  - intent: inquire_bachelor_program_name_and_info
+    entities:
+      - bachelor_program_name: "Business Administration"
+      - bachelor_info: "language of teaching"
+  - action: action_provide_program_details
+  - intent: completely_change_study_program_type
+  - action: utter_completely_change_study_program_type
+  - intent: inquire_master_programs
+  - action: action_list_master_faculties
+  - intent: choose_master_faculty
+    entities:
+      - master_faculty: "Artificial Intelligence and Data Science"
+  - action: action_list_programs_under_master_faculty
+  - intent: inquire_master_program_name_and_info
+    entities:
+      - master_program_name: "Applied AI for Digital Production Management"
+      - master_info: "language of teaching"
+  - action: action_provide_master_program_details
+
+
+- story: after bachelor program change to ixp language skills path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inquire_bachelor_programs
+  - action: action_list_bachelor_faculties
+  - intent: choose_bachelor_faculty
+    entities:
+      - bachelor_faculty: "Business and Economics"
+  - action: action_list_programs_under_bachelor_faculty
+  - intent: inquire_bachelor_program_name_and_info
+    entities:
+      - bachelor_program_name: "Business Administration"
+      - bachelor_info: "language of teaching"
+  - action: action_provide_program_details
+  - intent: completely_change_study_program_type
+  - action: utter_completely_change_study_program_type
+  - intent: inquire_international_exchange_programs
+  - action: utter_inquire_international_exchange_programs
+  - intent: inquire_ixp_language_skills
+  - action: action_get_language_skills
+  - intent: inquire_ixp_How_to_apply
+  - action: action_get_How_To_Apply
+
+
+- story: after bachelor program change to ixp how to apply path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inquire_bachelor_programs
+  - action: action_list_bachelor_faculties
+  - intent: choose_bachelor_faculty
+    entities:
+      - bachelor_faculty: "Business and Economics"
+  - action: action_list_programs_under_bachelor_faculty
+  - intent: inquire_bachelor_program_name_and_info
+    entities:
+      - bachelor_program_name: "Business Administration"
+      - bachelor_info: "language of teaching"
+  - action: action_provide_program_details
+  - intent: completely_change_study_program_type
+  - action: utter_completely_change_study_program_type
+  - intent: inquire_international_exchange_programs
+  - action: utter_inquire_international_exchange_programs
+  - intent: inquire_ixp_How_to_apply
+  - action: action_get_How_To_Apply
+  - intent: inquire_ixp_language_skills
+  - action: action_get_language_skills
+
+
+
+- story: after master program change to bachelor path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inquire_bachelor_programs
+  - action: action_list_bachelor_faculties
+  - intent: choose_bachelor_faculty
+    entities:
+      - bachelor_faculty: "Business and Economics"
+  - action: action_list_programs_under_bachelor_faculty
+  - intent: inquire_bachelor_program_name_and_info
+    entities:
+      - bachelor_program_name: "Business Administration"
+      - bachelor_info: "language of teaching"
+  - action: action_provide_program_details
+  - intent: completely_change_study_program_type
+  - action: utter_completely_change_study_program_type
+  - intent: inquire_bachelor_programs
+  - action: action_list_bachelor_faculties
+  - intent: choose_bachelor_faculty
+    entities:
+      - bachelor_faculty: "Business and Economics"
+  - action: action_list_programs_under_bachelor_faculty
+  - intent: inquire_bachelor_program_name_and_info
+    entities:
+      - bachelor_program_name: "Business Administration"
+      - bachelor_info: "language of teaching"
+  - action: action_provide_program_details
+
+
+- story: after master program change to ixp language skills path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inquire_master_programs
+  - action: action_list_master_faculties
+  - intent: choose_master_faculty
+    entities:
+      - master_faculty: "Artificial Intelligence and Data Science"
+  - action: action_list_programs_under_master_faculty
+  - intent: inquire_master_program_name_and_info
+    entities:
+      - master_program_name: "Applied AI for Digital Production Management"
+      - master_info: "language of teaching"
+  - action: action_provide_master_program_details
+  - intent: completely_change_study_program_type
+  - action: utter_completely_change_study_program_type
+  - intent: inquire_international_exchange_programs
+  - action: utter_inquire_international_exchange_programs
+  - intent: inquire_ixp_language_skills
+  - action: action_get_language_skills
+  - intent: inquire_ixp_How_to_apply
+  - action: action_get_How_To_Apply
+
+
+- story: after master program change to ixp how to apply path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inquire_master_programs
+  - action: action_list_master_faculties
+  - intent: choose_master_faculty
+    entities:
+      - master_faculty: "Artificial Intelligence and Data Science"
+  - action: action_list_programs_under_master_faculty
+  - intent: inquire_master_program_name_and_info
+    entities:
+      - master_program_name: "Applied AI for Digital Production Management"
+      - master_info: "language of teaching"
+  - action: action_provide_master_program_details
+  - intent: completely_change_study_program_type
+  - action: utter_completely_change_study_program_type
+  - intent: inquire_international_exchange_programs
+  - action: utter_inquire_international_exchange_programs
+  - intent: inquire_ixp_How_to_apply
+  - action: action_get_How_To_Apply
+  - intent: inquire_ixp_language_skills
+  - action: action_get_language_skills
