@@ -1,0 +1,228 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - Hello Application Assistant
+    - Greetings, Application Assistant
+    - Hi, Assistant system
+    - Hello, Assistant system
+    - hi
+    - Good day Application Assistant
+    - hello there
+    - good morning
+    - good evening
+    - hey there
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: inquire_international_exchange_programs
+  examples: |
+    - I am considering the International exchange programs. Can you tell me more about it?
+    - I would like to know more about International exchange programs.
+    - I would prefer information about International exchange programs.
+    - I would like to learn about International exchange programs.
+    - I am looking for details on International exchange programs.
+    - give me information about International exchange programs.
+    - Can you supply me with information about International exchange programs.
+    - I am seeking information about International Exchange programs
+    - I am inquiring about International Exchange programs
+
+- intent: inquire_ixp_language_skills
+  examples: |
+    - I would like to know about Language skills for the International Exchange programs.
+    - Could you provide information on the language skills required for International Exchange programs?
+    - I am interested in understanding the language skills necessary for International Exchange programs.
+    - Can you please explain the language skills needed for International Exchange programs?
+    - I would like to know more about the language skills for International Exchange programs.
+    - Can you please clarify the language skills expected for International Exchange programs?
+    - I want to know more about language skills required for International Exchange programs?
+    - give me information about language skills required for International Exchange programs?
+    - Can you supply me with language skills required for International Exchange programs?
+    - I need Information about required language skills
+    - I am looking for specific information about Language skills"
+    - I Would like to know about Language skills
+    - I Would like details about Language skills 
+
+- intent: inquire_ixp_How_to_apply
+  examples: |
+    - I'm looking for the application procedure of the International Exchange programs.
+    - I'm interested in the application procedure for the International Exchange programs.
+    - I would like to know about How To Apply for the International Exchange programs.
+    - Could you provide information on the application procedure for International Exchange programs?
+    - I am interested in understanding the application procedure for International Exchange programs.
+    - Can you please explain the application procedure for International Exchange programs?
+    - I want to know more about How To Apply for International Exchange programs?
+    - Give me information about application procedure for International Exchange programs?
+    - Can you supply me with application procedure for International Exchange programs?
+    - I'm looking for the How To Apply .
+    - I'm interested in the How To Apply.
+    - I need specific information about How To Apply.
+    - I would like to know about application procedure.
+    - I would like to know details about application procedure.
+    - Could you provide information on the application procedure?
+    - I am interested in understanding the application procedure.
+    - Can you please explain the How To Apply?
+    - I want to know more about application procedure?
+    - Give me information about How To Apply?
+    - Can you supply me with application procedure?
+    - I need Information about How To Apply
+    - I am looking for specific information and details about How To Apply"
+    - I Would like to know about application procedure
+    - I Would like details about application procedure 
+
+- intent: inquire_bachelor_programs
+  examples: |
+    - I would like to explore details about the available bachelor programs.
+    - I want to know about bachelor programs.
+    - I am curious about the bachelor programs.
+    - The bachelor programs have caught my attention.
+    - I would like to learn more about available bachelor programs.
+    - The bachelor programs pique my interest.
+    - I have a keen interest in the bachelor programs.
+    - The bachelor programs are what I find interesting.
+    - I find myself drawn to the bachelor programs.
+    - I am interested in exploring the bachelor programs.
+    - give me information about bachelor programs.
+    - Can you supply me with information about bachelor programs.
+    - I am seeking information about bachelor programs
+    - I am inquiring about bachelor programs
+
+- intent: choose_bachelor_faculty
+  examples: |
+    - [Business and Economics](bachelor_faculty)
+    - [Computer Science and Information Technology](bachelor_faculty)
+    - [Engineering and Technology](bachelor_faculty)
+    - [Health Sciences](bachelor_faculty)
+    - [Tourism and Hospitality Management](bachelor_faculty)
+    - I am interested in  [Business and Economics](bachelor_faculty)
+    - I am interested in  [Computer Science and Information Technology](bachelor_faculty) .
+    - I am interested in the [Engineering and Technology](bachelor_faculty) Bachelor faculty.
+    - I am interested in the [Health Sciences](bachelor_faculty) faculty.
+    - I am interested in the [Tourism and Hospitality Management](bachelor_faculty) Bachelor faculty.
+    
+
+- intent: inquire_bachelor_program_name_and_info
+  examples: |
+    - I'm interested in [Applied Computer Science](bachelor_program_name), and i want information about the [Language of teaching](bachelor_info)
+    - I'm interested in [Artificial Intelligence](bachelor_program_name), and i want information about the [application period](bachelor_info)
+    - Tell me more about [Civil Engineering](bachelor_program_name) and i want information on the [application period](bachelor_info)
+    - [Business Administration](bachelor_program_name), [application period](bachelor_info)
+    - [Business Informatics](bachelor_program_name), [Language of teaching](bachelor_info)
+    - [Industrial Engineering](bachelor_program_name) and [Language of teaching](bachelor_info)
+    - [International Management](bachelor_program_name) and [application period](bachelor_info)
+    - [Healthcare Informatics](bachelor_program_name), [application period](bachelor_info)
+    - I am interested in the [Nursing](bachelor_program_name) Bachelor program and i want to know it's [teaching language](bachelor_info)
+    - I am interested in the [Health Sciences](bachelor_program_name) program and i want to know what is the [teaching language](bachelor_info)
+    - I am interested in the [Physician Assistant](bachelor_program_name) Bachelor program and the [application period](bachelor_info)
+    - [Artificial Intelligence](bachelor_program_name), [application period](bachelor_info)
+    - [Bioinformatics](bachelor_program_name), [application period](bachelor_info)
+    - [Cyber Security](bachelor_program_name), [teaching language](bachelor_info)
+    - [Electrical Engineering and Information Technology](bachelor_program_name), [teaching language](bachelor_info)
+    - [Technical Design](bachelor_program_name), and i want information about the [Language of teaching](bachelor_info)
+    - [Civil and Construction Engineering](bachelor_program_name) and i want information about the [Language of teaching](bachelor_info)
+    - [Construction Management](bachelor_program_name) and i want information about the [Language of teaching](bachelor_info)
+    - [Energy Systems Engineering](bachelor_program_name) and i want information about the [Language of teaching](bachelor_info)
+    - [Environmental Engineering](bachelor_program_name) and i want information about the [Language of teaching](bachelor_info)
+    - [Mechanical Engineering](bachelor_program_name) and i want information on it's [application period](bachelor_info)
+    - [Mechatronics](bachelor_program_name) and i want information on it's [application period](bachelor_info)
+    - [Tourism Management](bachelor_program_name) and i want information on it's [application period](bachelor_info)
+    - [Mechanical Engineering](bachelor_program_name) and i want information on it's [application period](bachelor_info)
+    - I am interested in the [Management in Health](bachelor_program_name) Bachelor program and i want to know the [application period](bachelor_info).
+    
+     
+    
+   
+
+
+- intent: inquire_master_programs
+  examples: |
+    - I would like to explore details about the available master programs.
+    - I want to know about master programs.
+    - I am curious about the master programs.
+    - The master programs have caught my attention.
+    - I would like to learn more about available master programs.
+    - The master programs pique my interest.
+    - I have a keen interest in the master programs.
+    - The master programs are what I find interesting.
+    - I find myself drawn to the master programs.
+    - I am interested in exploring the master programs.
+    - give me information about master programs.
+    - Can you supply me with information about master programs.
+    - I am seeking information about master programs
+    - I am inquiring about master programs
+    
+
+- intent: choose_master_faculty
+  examples: |
+    - [Artificial Intelligence and Data Science](master_faculty)
+    - [Engineering and Technology](master_faculty)
+    - [Health and Well-being](master_faculty)
+    - [Business and Management](master_faculty)
+    - I am interested in  [Artificial Intelligence and Data Science](master_faculty)
+    - I am interested in  [Engineering and Technology](master_faculty) .
+    - I am interested in the [Health and Well-being](master_faculty) Master faculty.
+    - I am interested in the [Business and Management](master_faculty) faculty.    
+
+- intent: inquire_master_program_name_and_info
+  examples: |
+    - I'm interested in [Applied AI for Digital Production Management](master_program_name), and i want information about the [Language of teaching](master_info)
+    - I'm interested in [Artificial Intelligence and Data Science](master_program_name), and i want information about the [application period](master_info)
+    - Tell me more about [Artificial Intelligence for Smart Sensors and Actuators](master_program_name) and i want information on the [application period](master_info)
+    - [High Performance Computing / Quantum Computing](master_program_name), [application period](master_info)
+    - [Life Science Informatics](master_program_name), [Language of teaching](master_info)
+    - [Media Technology](master_program_name) and [Language of teaching](master_info)
+    - [Automotive Electronics](master_program_name) and [application period](master_info)
+    - [Civil and Environmental Engineering](master_program_name), [application period](master_info)
+    - I am interested in the [Electrical Engineering and Information Technology](master_program_name) Bachelor program and i want to know it's [teaching language](master_info)
+    - I am interested in the [Electromobility](master_program_name) program and i want to know what is the [teaching language](master_info)
+    - I am interested in the [Mechanical Engineering](master_program_name) Bachelor program and the [application period](master_info)
+    - [Mechatronic and Cyber-Physical Systems](master_program_name), [application period](master_info)
+    - [Digital Health](master_program_name), [application period](master_info)
+    - [Global Public Health](master_program_name), [teaching language](master_info)
+    - [Healthy and Sustainable Buildings](master_program_name), [teaching language](master_info)
+    - [Mental Health](master_program_name), and i want information about the [Language of teaching](master_info)
+    - [Business Informatics](master_program_name) and i want information about the [Language of teaching](master_info)
+    - [International Tourism Development](master_program_name) and i want information about the [Language of teaching](master_info)
+    - [Strategic and International Management](master_program_name) and i want information about the [Language of teaching](master_info)
+    - [Digital Health](master_program_name) and i want information about the [Language of teaching](master_info)
+    - [Media Technology](master_program_name) and i want information on it's [application period](master_info)
+    - [Global Public Health](master_program_name) and i want information on it's [application period](master_info)
+    - [Electromobility](master_program_name) and i want information on it's [application period](master_info)
+    - [Automotive Electronics](master_program_name) and i want information on it's [application period](master_info)
+    - I am interested in the [Artificial Intelligence and Data Science](master_program_name) Bachelor program and i want to know the [application period](master_info).
+    
+- intent: inquire_another_bachelor_program_loop
+  examples: |
+    - I would like to inquire about another bachelor program
+    - I would like to explore details about another bachelor program.
+    - I want to know information about another bachelor program.
+    - I am want to inquire about another bachelor program
+    - I would like to inquire about another bachelor program
+
+- intent: inquire_another_master_program_loop
+  examples: |
+    - I would like to inquire about another master program
+    - I would like to explore details about another master program.
+    - I want to know information about another master program.
+    - I am want to inquire about another master program
+    - I would like to inquire about another master program
+
+- intent: completely_change_study_program_type
+  examples: |
+    - I would like to completely change the study program type
+    - I would like to completely change the study program type
+    - I want to completely change the study program type.
+    - I am want completely change the study program type.
+    - I would like to completely change the study program type
+
+- intent: goodbye
+  examples: |
+    - Bye
+    - Goodbye
+    - Farewell
+    - See you
