@@ -1,0 +1,222 @@
+{
+  "Study_Programs": {
+    "International_Exchange_Programs": {
+      "Language_skills": [
+        "All exchange students are required to take a mandatory German course throughout the semester.",
+        "An intensive German course (level A1) is offered during Orientation Week, 1-2 weeks before the start of studies.",
+        "No language certificates are necessary.",
+        "You can end the chat by saying Bye, or ask for information about the application procedure of International exchange programs."
+      ],
+      "How_To_Apply": [
+        "Refer to the application checklist for guidance in preparing for your DIT exchange semester.",
+        "Get the provided link after official nomination by your home university.",
+        "Complete Online application to receive your login details.",
+        "Set a password and submit additional details.",
+        "Finally, upload required documents.",
+        "You can end the chat by saying Bye, or ask for information about the Language Skills required for International exchange programs."
+      ]
+    },
+    "Bachelor_Programs": {
+      "Computer Science and Information Technology": {
+        "Applied Computer Science": {
+          "Application_period": "from 15th of April until 15th of July",
+          "Language_of_teaching": "German"
+        },
+        "Artificial Intelligence": {
+          "Language_of_teaching": "German or English",
+          "Application_period": "from 15th of April until 15th of July"
+        },
+        "Bioinformatics": {
+          "Language_of_teaching": "German",
+          "Application_period": "from 15th of April until 15th of July"
+        },
+        "Cyber Security": {
+          "Language_of_teaching": "German",
+          "Application_period": "from 15th of April until 15th of July"
+        },
+        "Electrical Engineering and Information Technology": {
+          "Language_of_teaching": "German",
+          "Application_period": "from 15th of April until 15th of July"
+        },
+        "Technical Design": {
+          "Language_of_teaching": "German",
+          "Application_period": "from 15th of April until 15th of July"
+        }
+      },
+      "Business and Economics": {
+        "Applied Economics": {
+          "Language_of_teaching": "German",
+          "Application_period": "from 15th of April until 15th of July"
+        },
+        "Business Administration": {
+          "Language_of_teaching": "German",
+          "Application_period": "from 1st of April until 30th of July"
+        },
+        "Business Informatics": {
+          "Language_of_teaching": "German",
+          "Application_period": "from 15th of April until 15th of July"
+        },
+        "Industrial Engineering": {
+          "Language_of_teaching": "English",
+          "Application_period": "from 15th of April until 15th of July"
+        },
+        "International Management": {
+          "Language_of_teaching": "English",
+          "Application_period": "from 15th of April until 15th of July"
+        }
+      },
+      "Engineering and Technology": {
+        "Civil and Construction Engineering": {
+          "Language_of_teaching": "German",
+          "Application_period": "from 15th of April until 15th of July"
+        },
+        "Construction Management": {
+          "Language_of_teaching": "German",
+          "Application_period": "from 1st of April until 30th of July"
+        },
+        "Energy Systems Engineering": {
+          "Language_of_teaching": "English",
+          "Application_period": "from 1st of January until 15th of March"
+        },
+        "Environmental Engineering": {
+          "Language_of_teaching": "German",
+          "Application_period": "from 1st of April until 30th of July"
+        },
+        "Mechanical Engineering": {
+          "Language_of_teaching": "German",
+          "Application_period": "from 1st of January until 15th of March"
+        },
+        "Mechatronics": {
+          "Language_of_teaching": "German",
+          "Application_period": "from 1st of January until 15th of March"
+        }
+      },
+      "Health Sciences": {
+        "Healthcare Informatics": {
+          "Language_of_teaching": "German",
+          "Application_period": "from 1st of January until 15th of March"
+        },
+        "Health Informatics": {
+          "Language_of_teaching": "German",
+          "Application_period": "Application for this program is no longer possible"
+        },
+        "Management in Health, Social and Rescue Services": {
+          "Language_of_teaching": "German",
+          "Application_period": "from 15th of April until 15th of July"
+        },
+        "Management of Inclusion and Participation": {
+          "Language_of_teaching": "German",
+          "Application_period": "from 15th of April until 15th of July"
+        },
+        "Nursing": {
+          "Language_of_teaching": "German",
+          "Application_period": "from 1st of January until 15th of March"
+        },
+        "Physician Assistant": {
+          "Language_of_teaching": "German",
+          "Application_period": "from 1st of January until 15th of March"
+        }
+      },
+      "Tourism and Hospitality Management": {
+        "International Tourism Management / Health and Medical Tourism": {
+          "Language_of_teaching": "English",
+          "Application_period": "from 1st of March until 15th of May"
+        },
+        "Tourism Management": {
+          "Language_of_teaching": "German or English",
+          "Application_period": "from 1st of 15th of May until 15th of July"
+        }
+      }
+    },
+    "Master_Programs": {
+      "Artificial Intelligence and Data Science": {
+        "Applied AI for Digital Production Management": {
+          "Language_of_teaching": "English",
+          "Application_period": "for Winter Semester from 15th of April until 15th of July , and for Summer Semester from 15th of November until 15th of January"
+        },
+        "Artificial Intelligence and Data Science": {
+          "Language_of_teaching": "English",
+          "Application_period": "for Winter Semester from 15th of April until 15th of June , and for Summer Semester from 15th of November until 15th of January"
+        },
+        "Artificial Intelligence for Smart Sensors and Actuators": {
+          "Language_of_teaching": "English",
+          "Application_period": "for Winter Semester from 15th of April until 15th of July , and for Summer Semester from 15th of November until 15th of January"
+        },
+        "High Performance Computing / Quantum Computing": {
+          "Language_of_teaching": "English",
+          "Application_period": "from 15th of November until 15th of January"
+        },
+        "Life Science Informatics": {
+          "Language_of_teaching": "English",
+          "Application_period": "from 15th of April until 15th of June"
+        },
+        "Media Technology": {
+          "Language_of_teaching": "German",
+          "Application_period": "for Winter Semester from 15th of April until 15th of July, and for Summer Semester from 15th of November until 15th of January"
+        }
+      },
+      "Engineering and Technology": {
+        "Automotive Electronics": {
+          "Language_of_teaching": "German",
+          "Application_period": "from 15th of April until 15th of July"
+        },
+        "Civil and Environmental Engineering": {
+          "Language_of_teaching": "German",
+          "Application_period": " from 15th of November until 15th of January"
+        },
+        "Electrical Engineering and Information Technology": {
+          "Language_of_teaching": "English",
+          "Application_period": " from 15th of November until 15th of January"
+        },
+        "Electromobility": {
+          "Language_of_teaching": "German",
+          "Application_period": " from 15th of November until 15th of January"
+        },
+        "Mechanical Engineering": {
+          "Language_of_teaching": "German",
+          "Application_period": "from 15th of April until 15th of July"
+        },
+        "Mechatronic and Cyber-Physical Systems": {
+          "Language_of_teaching": "English",
+          "Application_period": "from 15th of November until 15th of January"
+        }
+      },
+      "Health and Well-being": {
+        "Digital Health": {
+          "Language_of_teaching": "English",
+          "Application_period": "from 15th of April until 15th of July"
+        },
+        "Global Public Health": {
+          "Language_of_teaching": "English",
+          "Application_period": "from 15th of April until 15th of July"
+        },
+        "Healthy and Sustainable Buildings": {
+          "Language_of_teaching": "English",
+          "Application_period": "from 15th of November until 15th of January"
+        },
+        "Mental Health": {
+          "Language_of_teaching": "German",
+          "Application_period": "from 15th of April until 15th of July"
+        }
+      },
+      "Business and Management": {
+        "Business Informatics": {
+          "Language_of_teaching": "German",
+          "Application_period": "from 15th of November until 15th of January"
+        },
+        "International Tourism Development": {
+          "Language_of_teaching": "English",
+          "Application_period": "from 15th of November until 15th of January"
+        },
+        "Strategic and International Management": {
+          "Language_of_teaching": "English or German",
+          "Application_period": "from 15th of November until 15th of January"
+        },
+        "Technology Management": {
+          "Language_of_teaching": "German",
+          "Application_period": "from 15th of April until 15th of July"
+        }
+      }
+    }
+  }
+}
