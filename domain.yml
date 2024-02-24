@@ -1,0 +1,137 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - choose_study_programs
+  - inquire_international_exchange_programs
+  - inquire_ixp_language_skills
+  - inquire_ixp_How_to_apply
+  - inquire_bachelor_programs
+  - inquire_master_programs
+  - choose_bachelor_faculty
+  - inquire_bachelor_program_name_and_info
+  - inquire_master_program_name_and_info
+  - choose_master_faculty
+  - inquire_another_bachelor_program_loop
+  - inquire_another_master_program_loop
+  - completely_change_study_program_type
+
+
+entities:
+  - bachelor_faculty
+  - bachelor_program_name
+  - bachelor_info
+  - master_faculty
+  - master_program_name
+  - master_info
+
+slots:
+  bachelor_info:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: bachelor_info
+
+  bachelor_program_name:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: bachelor_program_name
+
+  bachelor_faculty:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: bachelor_faculty
+
+  master_info:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: master_info
+
+  master_program_name:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: master_program_name
+
+  master_faculty:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: master_faculty
+
+
+
+
+actions:
+  - action_get_program_info
+  - action_get_language_skills
+  - action_get_How_To_Apply
+  - action_list_bachelor_faculties
+  - action_list_programs_under_bachelor_faculty
+  - action_provide_program_details
+  - action_list_master_faculties
+  - action_list_programs_under_master_faculty
+  - action_provide_master_program_details
+
+responses:
+  utter_greet:
+  - text: "Hi, I am Mezo the Application Assistant system. Would you prefer information on International Exchange programs, Bachelor Programs, or Master Programs?"
+  - text: "Hi, I'm Mezo, the Application Assistant system. Are you looking for details on International Exchange programs, Bachelor Programs, or Master Programs?"
+  - text: "Hello, I am the Application Assistant system. Would you like to know about International Exchange programs, Bachelor Programs, or Master Programs?"
+  - text: "Greetings! I am the Application Assistant system. Are you seeking information on International Exchange programs, Bachelor Programs, or Master Programs? "
+  - text: "Good day, Are you inquiring about International Exchange programs, Bachelor Programs, or Master Programs?"
+  - text: "Hello, how can I assist you today? Are you seeking information about International Exchange programs, Bachelor Programs, or Master Programs?"
+
+  utter_goodbye:
+  - text: "Bye"
+  - text: "Goodbye"
+
+  utter_inquire_international_exchange_programs:
+  - text: "Certainly. Could you please specify what information exactly do you need? Language Skills or How To Apply?"
+  - text: "Certainly. What specific information are you looking for? Language Skills or details about How To Apply?"
+  - text: "Of course. Would you like to know about Language skills or about the application procedure?"
+  - text: "Certainly. Would you like details about Language skills or the application procedure?"
+
+
+  utter_inquire_bachelor_programs_faculties:
+    - text: >
+        Sure, In what of the following faculties are you interested in?
+
+        Computer Science and Information Technology
+        
+        Business and Economics
+        
+        Engineering and Technology
+        
+        Health Sciences
+        
+        Tourism and Hospitality Management
+
+  utter_inquire_master_programs_faculties:
+    - text: >
+        Please choose the field of interest for your Master's Program from the following options:
+
+        Artificial Intelligence and Data Science
+        
+        Engineering and Technology
+        
+        Health and Well-being
+        
+        Business and Management
+
+  utter_completely_change_study_program_type:
+    - text: "Sure, Would you prefer information on International Exchange programs, Bachelor Programs, or Master Programs?"
+    - text: "Certainly, Are you looking for details on International Exchange programs, Bachelor Programs, or Master Programs?"
+    - text: "Ofcourse, Would you like to know about International Exchange programs, Bachelor Programs, or Master Programs?"
+    - text: "Sure, Are you seeking information on International Exchange programs, Bachelor Programs, or Master Programs? "
+    - text: "Would you like to inquire about International Exchange programs, Bachelor Programs, or Master Programs?"
+    - text: "Certainly, Are you seeking information about International Exchange programs, Bachelor Programs, or Master Programs?"
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
